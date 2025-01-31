@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian Grid</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.mondrian {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto;
+    gap: 5px;
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    padding: 5px;
+}
+
+.box {
+    border: 5px solid black;
+}
+
+.blue {
+    background-color: blue;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.white1 {
+    background-color: white;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.yellow {
+    background-color: yellow;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.red {
+    background-color: red;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.white2 {
+    background-color: white;
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="mondrian">
+        <div class="box blue"></div>
+        <div class="box white1"></div>
+        <div class="box yellow"></div>
+        <div class="box red"></div>
+        <div class="box white2"></div>
+    </div>
+</body>
+</html>
